@@ -1,10 +1,10 @@
 
 
 body { 
+    overflow-y: scroll;
     margin: 0; 
     font-family: 'Saira Condensed', 'Noto Sans KR', sans-serif; 
     -ms-overflow-style: none; 
-    scrollbar-width: none; 
     &::-webkit-scrollbar { 
         display: none;
     }
