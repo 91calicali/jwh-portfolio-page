@@ -11,20 +11,18 @@
     <link rel="shortcut icon" type="image/x-icon" href="resource/image/favicon.png">
     <link rel="apple-touch-icon" href="resource/image/favicon.png">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/keyframes.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Saira+Condensed&display=swap" rel="stylesheet">
     <title>JWH Portfolio Page</title>
 </head>
 <body>
-    <div id="web-container">
+    <div id="web-container" class="relative width-100 height-100">
         <!-- header -->
-        <header>
-            <nav>
-                <ul>
+        <header id="hd">
+            <nav class="hd-nav">
+                <ul class="absolute">
                     <li onclick="navScroll(0)">Home</li>
                     <li onclick="navScroll(1)">About</li>
                     <li onclick="navScroll(2)">Skill</li>
@@ -32,7 +30,7 @@
                 </ul>
             </nav>
         
-            <div id="nav-menu-btn" class="mnb" onclick="viewMobileMenu()">
+            <div class="nav-menu-btn mnb" onclick="viewMobileMenu()">
                 <span class="mnb mnb-line"></span>
                 <span class="mnb mnb-line"></span>
                 <span class="mnb mnb-line"></span>
@@ -40,10 +38,10 @@
         </header>
 
         <!-- mobile menu -->
-        <aside id="aside">
-            <div id="mobile-nav-menu-container">
-                <nav>
-                    <ul class="width-100">
+        <aside id="as">
+            <div class="mobile-nav-menu-container">
+                <nav class="as-nav">
+                    <ul class="absolute width-100">
                         <li onclick="navScroll(0)">Home</li>
                         <li onclick="navScroll(1)">About</li>
                         <li onclick="navScroll(2)">Skill</li>
@@ -53,26 +51,26 @@
             </div>
         </aside>
 
-        <main>
+        <main id="main">
             <section id="home-section" class="section-container relative width-100">
                 <p class="absolute">Ji WonHong Web Publisher</p>
                 <h1 class="absolute">Portfolio</h1>
 
-                <video class="relative" muted autoplay loop>
+                <video class="bg-video relative" muted autoplay loop>
                     <source src="resource/video/home_bg.mp4">
                     video 태그가 지원되지 않는 브라우저입니다.
                 </video>
             </section>
 
             <section id="about-section" class="section-container relative width-100">
-                <div id="about-content" class="flex relative opacity-0">
+                <div class="about-content flex relative opacity-0">
                     <div class="left-container relative">
-                        <div id="photo-img"></div>
+                        <div class="photo-img"></div>
                     </div>
 
                     <div class="right-container">
                         <div id="profile" class="relative width-100">
-                            <h2 class="sub-title">Profile</h2>
+                            <h3 class="sub-title">Profile</h2>
                         
                             <dl>
                                 <dt>Name</dt>
@@ -84,7 +82,7 @@
                             </dl>
                         </div>
 
-                        <div id="exp" class="relative width-100">
+                        <div class="exp relative width-100">
                             <h2 class="sub-title">Experience</h2>
 
                             <dl>
@@ -93,7 +91,7 @@
                             </dl>
                         </div>
 
-                        <div id="introduce" class="relative width-100">
+                        <div class="introduce relative width-100">
                             <h2 class="sub-title">Introduce</h2>
 
                             <p>
@@ -113,7 +111,7 @@
             </section>
 
             <section id="skill-section" class="section-container relative width-100">
-                <div id="skill-content" class="relative opacity-0">
+                <div class="skill-content relative opacity-0">
                     <h2 class="sub-title">Front-end</h2>
                     
                     <ul>
@@ -126,6 +124,7 @@
                     <div class="skill-tag-box">
                         <span>HTML5</span>
                         <span>CSS3</span>
+                        <span>SCSS</span>
                         <span>Javascript</span>
                         <span>jQuery</span>
                         <span>Vue.js</span> 
@@ -165,7 +164,7 @@
             </section>
 
             <section id="pb-section" class="section-container relative width-100">
-                <div id="pb-content" class="relative width-100 height-100 opacity-0">
+                <div class="pb-content relative width-100 height-100 opacity-0">
                     <ul class="flex absolute">
                         <li class="pb-list">#Vogue</li>
                         <li class="pb-list">#Neker</li>
@@ -211,7 +210,7 @@
             <section id="outro-section" class="section-container relative width-100">
                 <h2 class="absolute">Thank you for watching!</h2>
 
-                <video class="relative" muted autoplay loop>
+                <video class="bg-video relative" muted autoplay loop>
                     <source src="resource/video/home_bg.mp4">
                     video 태그가 지원되지 않는 브라우저입니다.
                 </video>
@@ -249,24 +248,24 @@
 
             // 섹션 컨텐츠 페이드 인 애니메이션.
             if(sy > getSectionHeight()[0] - 200 && sy < getSectionHeight()[0] + getSectionHeight()[1] - 200) {
-                sectionContent = document.querySelector("#about-content");
+                sectionContent = document.querySelector(".about-content");
                 sectionContent.style.animation = "fadeInAndUp1 1s ease-out forwards";
             } else if(sy > getSectionHeight()[0] + getSectionHeight()[1] - 200 && sy < getSectionHeight()[0] + getSectionHeight()[1] + getSectionHeight()[2] - 200) {
-                sectionContent = document.querySelector("#skill-content");
+                sectionContent = document.querySelector(".skill-content");
                 sectionContent.style.animation = "fadeInAndUp1 1s ease-out forwards";
             } else if(sy > getSectionHeight()[0] + getSectionHeight()[1] + getSectionHeight()[2] - 200 && sy < getSectionHeight()[0] + getSectionHeight()[1] + getSectionHeight()[2] + getSectionHeight()[3]) {
-                sectionContent = document.querySelector("#pb-content");
+                sectionContent = document.querySelector(".pb-content");
                 sectionContent.style.animation = "fadeInAndUp2 1s ease-out forwards";
             }
 
             // 현재 위치에 따라 색 변경.
             if(ww >= 768) {
                 if(sy < getSectionHeight()[0]) {
-                    $('header > nav > ul > li').css('color', '#FFF');
+                    $('#hd .hd-nav ul li').css('color', '#FFF');
                 } else if(sy > getSectionHeight()[0] && sy < getSectionHeight()[0] + getSectionHeight()[1] + getSectionHeight()[2] + getSectionHeight()[3]) {
-                    $('header > nav > ul > li').css('color', '#0B173B');
+                    $('#hd .hd-nav ul li').css('color', '#0B173B');
                 } else if(sy > getSectionHeight()[0] + getSectionHeight()[1] + getSectionHeight()[2] + getSectionHeight()[3]) {
-                    $('header > nav > ul > li').css('color', '#FFF');
+                    $('#hd .hd-nav ul li').css('color', '#FFF');
                 }
             } else if(ww < 768) {
                 if(sy < getSectionHeight()[0]) {
@@ -324,7 +323,7 @@
             if(ww <= 768) {
                 if(!$(e.target).hasClass("mnb")) {
                     $("body").css("overflow", "visible");
-                    $("aside").css("display", "none");
+                    $("#as").css("display", "none");
                 }
             }
         });
@@ -332,7 +331,7 @@
         // 모바일 메뉴 보이기.
         function viewMobileMenu() {
             $("body").css("overflow", "hidden");
-            $("aside").css("display", "block");
+            $("#as").css("display", "block");
         }
 
         // create modal.
