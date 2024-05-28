@@ -7,11 +7,11 @@
     <meta property="og:description" content="Ji Won Hong Web publisher Portfolio Page">
     <meta property="og:site_name" content="JWH Portfolio Page">
     <meta property="og:type" content="website">
-    <link rel="icon" type="image/x-icon" href="resource/image/favicon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="resource/image/favicon.png">
-    <link rel="apple-touch-icon" href="resource/image/favicon.png">
+    <link rel="icon" type="image/x-icon" href="resource/index/image/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="resource/index/image/favicon.png">
+    <link rel="apple-touch-icon" href="resource/index/image/favicon.png">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index/common.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Saira+Condensed&display=swap" rel="stylesheet">
@@ -29,14 +29,12 @@
                     <li onclick="navScroll(3)">Publishing</li>
                 </ul>
             </nav>
-        
             <div class="nav-menu-btn mnb" onclick="viewMobileMenu()">
                 <span class="mnb mnb-line"></span>
                 <span class="mnb mnb-line"></span>
                 <span class="mnb mnb-line"></span>
             </div>
         </header>
-
         <!-- mobile menu -->
         <aside id="as">
             <div class="mobile-nav-menu-container">
@@ -50,28 +48,23 @@
                 </nav>
             </div>
         </aside>
-
         <main id="main">
             <section id="home-section" class="section-container relative width-100">
                 <p class="absolute">Ji WonHong Web Publisher</p>
                 <h1 class="absolute">Portfolio</h1>
-
                 <video class="bg-video relative" muted autoplay loop>
-                    <source src="resource/video/home_bg.mp4">
+                    <source src="resource/index/video/home_bg.mp4">
                     video 태그가 지원되지 않는 브라우저입니다.
                 </video>
             </section>
-
             <section id="about-section" class="section-container relative width-100">
                 <div class="about-content flex relative opacity-0">
                     <div class="left-container relative">
                         <div class="photo-img"></div>
                     </div>
-
                     <div class="right-container">
                         <div id="profile" class="relative width-100">
                             <h3 class="sub-title">Profile</h2>
-                        
                             <dl>
                                 <dt>Name</dt>
                                 <dd>지원홍</dd>
@@ -81,19 +74,15 @@
                                 <dd>91calicali@gmail.com</dd>
                             </dl>
                         </div>
-
                         <div class="exp relative width-100">
                             <h2 class="sub-title">Experience</h2>
-
                             <dl>
                                 <dt>2020.08-2023.10</dt>
                                 <dd>달콤소프트 웹뷰 이벤트 개발자</dd>
                             </dl>
                         </div>
-
                         <div class="introduce relative width-100">
                             <h2 class="sub-title">Introduce</h2>
-
                             <p>
                                 안녕하세요. 웹 개발자로 IT 업계에 발을 들이게 된 지원홍입니다.
                                 <br>
@@ -109,18 +98,15 @@
                     </div>                        
                 </div>
             </section>
-
             <section id="skill-section" class="section-container relative width-100">
                 <div class="skill-content relative opacity-0">
                     <h2 class="sub-title">Front-end</h2>
-                    
                     <ul>
                         <li>웹 표준, 접근성, 호환성 준수하여 마크업하는 것을 지향합니다.</li>
                         <li>다양한 환경에 최적화될 수 있도록 노력하며 반응형 웹 퍼블리싱을 할 수 있습니다.</li>
                         <li>Javascript, jQuery를 사용해 동적인 웹을 구현할 수 있습니다.</li>
                         <li>Vue.js 스터디를 통한 기초 지식이 있습니다.</li>
                     </ul>
-
                     <div class="skill-tag-box">
                         <span>HTML5</span>
                         <span>CSS3</span>
@@ -129,28 +115,22 @@
                         <span>jQuery</span>
                         <span>Vue.js</span> 
                     </div>
-
                     <h2 class="sub-title">Back-end</h2>
-
                     <ul>
                         <li>Spring MVC 패턴에 맞는 웹 페이지 제작할 수 있습니다.</li>
                         <li>CRUD Query 작성, 이해를 할 수 있으며 업무에서 관련 대응을 한 경험이 있습니다.</li>
                     </ul>
-
                     <div class="skill-tag-box">
                         <span>Java</span>
                         <span>Spring</span>
                         <span>MySQL</span>
                         <span>MyBatis</span>
                     </div>
-
                     <h2 class="sub-title">Tools</h2>
-
                     <ul>
                         <li>Eclipse, IntelliJ, VS Code를 이용한 개발이 가능합니다.</li>
                         <li>형상 관리 도구를 통한 협업, 이슈 관리를 할 수 있습니다.</li>
                     </ul>
-
                     <div class="skill-tag-box">
                         <span>Eclipse</span>
                         <span>IntelliJ</span>
@@ -162,61 +142,104 @@
                     </div>
                 </div>
             </section>
-
             <section id="pb-section" class="section-container relative width-100">
                 <div class="pb-content relative width-100 height-100 opacity-0">
-                    <ul class="flex absolute">
-                        <li class="pb-list">#Vogue</li>
-                        <li class="pb-list">#Neker</li>
-                        <li class="pb-list">#SS Loona</li>
-                    </ul>
-
-                    <div class="pb-pf-container flex absolute" id="vogue">
-                        <img src="resource/image/vogue.png" alt="vogue thum">
-
-                        <h2 class="sub-title">Vogue Main Page Hard Coding</h2>
-
-                        <div class="link-box">
-                            <span onclick="viewPageInModal(0)" style="cursor: pointer;">View</span>
-                            <span><a href="https://github.com/91calicali/vogue-main-page-hard-coding" target="_blank">Github</a></span>
+                    <h2 class="sub-title">Publishing</h2>
+                    <div class="pb-item">
+                        <img src="/resource/index/image/vogue.png" alt="vogue publishing">
+                        <div class="desc">
+                            <p>
+                                보그 코리아
+                            </p>
+                            <p>
+                                보그 코리아 사이트의 메인 페이지를 하드 코딩으로 재현한 토이 프로젝트입니다.
+                            </p>
+                            <div class="pb-view-btn" onclick="viewPageInModal(0)">View</div>
                         </div>
                     </div>
-
-                    <div class="pb-pf-container flex absolute" id="neker">
-                        <img src="resource/image/neker.png" alt="neker thum">
-                    
-                        <h2 class="sub-title">Neker Main Page Hard Coding</h2>
-                    
-                        <div class="link-box">
-                            <span onclick="viewPageInModal(1)" style="cursor: pointer;">View</span>
-                            <span><a href="https://github.com/91calicali/neker-main-page-hard-coding" target="_blank">Github</a></span>
+                    <div class="pb-item">
+                        <img src="/resource/index/image/neker.png" alt="neker publishing">
+                        <div class="desc">
+                            <p>
+                                네케르
+                            </p>
+                            <p>
+                                네케르 사이트의 메인 페이지를 하드 코딩으로 재현한 토이 프로젝트입니다.
+                            </p>
+                            <div class="pb-view-btn" onclick="viewPageInModal(1)">View</div>
                         </div>
                     </div>
-
-                    <div class="pb-pf-container flex absolute" id="loona">
-                        <img src="resource/image/loona.png" alt="loona thum">
-                    
-                        <h2 class="sub-title">SS Loona Pre-Register Page</h2>
-                    
-                        <div class="link-box">
-                            <span><a href="https://superstarloona.dalcomsoft.com/" target="_blank">View</a></span>
+                    <div class="pb-item">
+                        <img src="/resource/index/image/coupang.png" alt="coupang play publishing">
+                        <div class="desc">
+                            <p>
+                                쿠팡 플레이
+                            </p>
+                            <p>
+                                QnA 아코디언 효과 구현을 목적으로 퍼블리싱한 쿠팡 플레이 로그인 화면 토이 프로젝트입니다.
+                            </p>
+                            <div class="pb-view-btn" onclick="viewPageInModal(2)">View</div>
                         </div>
-
-                        <p style="font-size: 0.8rem; color: #555;">보안 문제로 Modal이 지원되지 않습니다.</p>
+                    </div>
+                    <div class="pb-item">
+                        <img src="/resource/index/image/megabooks.png" alt="megabooks publishing">
+                        <div class="desc">
+                            <p>
+                                메가스터디북스
+                            </p>
+                            <p>
+                                input과 label을 이용해 로그인 폼 구현을 목적으로 퍼블리싱한 메가스터디북스 로그인 화면 토이 프로젝트입니다.
+                            </p>
+                            <div class="pb-view-btn" onclick="viewPageInModal(3)">View</div>
+                        </div>
+                    </div>
+                    <div class="pb-item">
+                        <img src="/resource/index/image/tab.png" alt="tab slider">
+                        <div class="desc">
+                            <p>
+                                CSS 슬라이더 구현
+                            </p>
+                            <p>
+                                Js, Jquery를 사용하지 않고 input checked로 슬라이더 구현을 목적으로 만든 토이 프로젝트입니다.
+                            </p>
+                            <div class="pb-view-btn" onclick="viewPageInModal(4)">View</div>
+                        </div>
+                    </div>
+                    <div class="pb-item">
+                        <img src="/resource/index/image/image-ac.png" alt="accordion image">
+                        <div class="desc">
+                            <p>
+                                이미지 아코디언
+                            </p>
+                            <p>
+                                flex 속성을 이용해 이미지 아코디언 효과 구현을 목적으로 만든 토이 프로젝트입니다.
+                            </p>
+                            <div class="pb-view-btn" onclick="viewPageInModal(5)">View</div>
+                        </div>
+                    </div>
+                    <div class="pb-item">
+                        <img src="/resource/index/image/video-landing.png" alt="video landing">
+                        <div class="desc">
+                            <p>
+                                비디오 랜딩 페이지
+                            </p>
+                            <p>
+                                video 태그와 애니메이션 딜레이를 이용해 간단한 랜딩 페이지 컨셉 구현을 목적으로 만든 토이 프로젝트입니다.
+                            </p>
+                            <div class="pb-view-btn" onclick="viewPageInModal(6)">View</div>
+                        </div>
                     </div>
                 </div>
             </section>
-
             <section id="outro-section" class="section-container relative width-100">
                 <h2 class="absolute">Thank you for watching!</h2>
 
                 <video class="bg-video relative" muted autoplay loop>
-                    <source src="resource/video/home_bg.mp4">
+                    <source src="resource/index/video/home_bg.mp4">
                     video 태그가 지원되지 않는 브라우저입니다.
                 </video>
             </section>
         </main>
-
         <footer class="width-100 absolute">
             <p>© 2024 JI WONHONG All Rights Reserved.</p>
             <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 목적으로 제작되었습니다.</p>
@@ -278,14 +301,6 @@
             }
         });
 
-        // 퍼블리싱 작업물 보이기.
-        $('.pb-list').click(function() {
-            $(this).addClass('active');
-            $(this).siblings('.pb-list').removeClass('active');
-            $('.pb-pf-container').removeClass('active');
-            $('.pb-pf-container').eq($(this).index()).addClass('active');
-        });
-
         // home & outro 섹션 높이 세팅.
         function sectionHeightSet() {           
             $('#home-section').css('height', window.innerHeight + 'px');
@@ -337,7 +352,12 @@
         // create modal.
         let urls = [
             "https://91calicali.github.io/vogue-main-page-hard-coding/",
-            "https://91calicali.github.io/neker-main-page-hard-coding/"
+            "https://91calicali.github.io/neker-main-page-hard-coding/",
+            "/publishing/coupang-play.html",
+            "/publishing/mega-login.html",
+            "/publishing/tab-slider.html",
+            "/publishing/accordion-image.html",
+            "/publishing/video-landing.html",
         ];
 
         function viewPageInModal(idx) {
