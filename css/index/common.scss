@@ -50,7 +50,6 @@ body {
             }
         }
     }
-
     .nav-menu-btn {
         z-index: 1001;
         position: absolute;
@@ -68,7 +67,6 @@ body {
         }
     }
 }
-
 /* mobile menu */
 #as {
     display: none;
@@ -100,7 +98,6 @@ body {
         }
     }
 }
-
 /* home section */
 #home-section {
     overflow: hidden;
@@ -113,7 +110,6 @@ body {
         color: #FFF;
         white-space: nowrap;
     }
-
     h1 {
         top: 50%;
         left: 50%;
@@ -124,7 +120,6 @@ body {
         color: #FFF;
     }
 }
-
 /* about section */
 #about-section {
     height: 800px;
@@ -140,11 +135,10 @@ body {
                 margin: auto;
                 width: 200px;
                 height: 200px;
-                background: url(/resource/index/image/myprofile.jpg) no-repeat center/100% transparent;
+                background: url(../../resource/index/image/myprofile.jpg) no-repeat center/100% transparent;
                 border-radius: 50%;
             }
         }
-
         .right-container {
             width: 50%;
             margin-left: 100px;
@@ -157,7 +151,6 @@ body {
                     margin-bottom: 5px;
                     font-weight: 600;
                 }
-
                 dd {
                     float: left;
                     margin-left: 0;
@@ -165,7 +158,6 @@ body {
                     color: #555;
                 }
             }
-
             .introduce {
                 p {
                     color: #555;
@@ -174,7 +166,6 @@ body {
         }
     }
 }
-
 /* skill section */
 #skill-section {
     height: 800px;
@@ -195,7 +186,6 @@ body {
                 }
             }
         }
-
         .skill-tag-box {
             margin-top: 10px;
             margin-bottom: 30px;
@@ -211,7 +201,6 @@ body {
         }
     }
 }
-
 /* pb section */
 #pb-section {
     display: flex;
@@ -280,9 +269,7 @@ body {
             }
         }
     }
-    
 }
-
 /* outro */
 #outro-section {
     overflow: hidden;
@@ -297,7 +284,6 @@ body {
         color: #FFF;
     }
 }
-
 /* footer */
 footer {
     bottom: 0;
@@ -309,7 +295,6 @@ footer {
         color: #FFF;
     }
 }
-
 /* modal */
 iframe {
     width: 100%;
@@ -317,7 +302,6 @@ iframe {
     background-color: #FFF;
     border: none;
 }
-
 .web-page-modal {
     z-index: 9000;
     position: fixed;
