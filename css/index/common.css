@@ -182,7 +182,7 @@ body::-webkit-scrollbar {
   margin: auto;
   width: 200px;
   height: 200px;
-  background: url(/resource/index/image/myprofile.jpg) no-repeat center/100% transparent;
+  background: url(resource/index/image/myprofile.jpg) no-repeat center/100% transparent;
   border-radius: 50%;
 }
 #about-section .about-content .right-container {
