@@ -199,7 +199,8 @@ input[id=nav-check]:checked + .nav-btn::after {
     font-size: 13px;
     font-weight: 600;
 }
-.login-section input[type=text] {
+.login-section input[type=text],
+.login-section input[type=password] {
     width: 100%;
     height: 40px;
     border: none;
@@ -208,10 +209,11 @@ input[id=nav-check]:checked + .nav-btn::after {
     letter-spacing: -1px;
     transition: 0.3s;
 }
-.login-section input[type=text]:focus {
+.login-section input[type=text]:focus,
+.login-section input[type=password]:focus {
     box-shadow: 0 0 4px #0082ff;
 }
-.login-section input[type=text]:nth-of-type(2) {
+.login-section input[type=password] {
     margin-bottom: 12px;
 }
 .login-section label {
