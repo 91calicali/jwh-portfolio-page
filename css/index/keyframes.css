@@ -13,7 +13,7 @@
 @keyframes fadeInAndUp2 {
     from {
         opacity: 0;
-        transform: translateY(3%);
+        transform: translateY(6%);
     }
 
     to {

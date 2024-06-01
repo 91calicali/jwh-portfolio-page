@@ -16,6 +16,88 @@ body {
     justify-content: center;
     align-items: center;
 }
+// header. (width 1024px 이하)
+header {
+    z-index: 101;
+    position: fixed;
+    display: none;
+    width: 100%;
+    .gnb-btn {
+        z-index: 102;
+        position: relative;
+        width: 35px;
+        height: 25px;
+        margin: 10px;
+        margin-left: auto;
+        text-align: right;
+        cursor: pointer;
+        span {
+            position: absolute;
+            right: 0;
+            height: 2px;
+            background-color: #fff;
+            transition: 0.5s;
+            &:nth-of-type(1) {
+                width: 100%;
+                top: 0;
+            }
+            &:nth-of-type(2) {
+                width: 80%;
+                top: 50%;
+            }
+            &:nth-of-type(3) {
+                width: 60%;
+                top: 100%;
+            }
+        }
+        &.active span:nth-of-type(1) {
+            top: 50%;
+            transform: rotate(45deg);
+        } 
+        &.active span:nth-of-type(2) {
+            opacity: 0;
+        }
+        &.active span:nth-of-type(3) {
+            width: 100%;
+            top: 50%;
+            transform: rotate(-45deg);
+        }
+    }
+}
+// gnb nav. (width 1024px 이하)
+.gnb-nav {
+    z-index: 100;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000e6;
+    &.active {
+        display: block; 
+    }
+    nav {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        a {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            font-family: 'DM Serif Display', sans-serif; 
+            color: #fff;
+            font-size: 3rem;
+            text-decoration: none;
+            transition: 0.3s;
+            &:hover {
+                color: goldenrod;
+            }
+        }
+    }
+}
+// slide nav (화면 우측 fix)
 .slide-nav {
     position: fixed;
     top: 50%;
@@ -50,19 +132,23 @@ body {
         }
     }
 }
+// intro section.
 .intro-section {
     background-color: #2a2a77;
     h1 {
         position: relative;
-        font-size: 5rem;
+        font-size: 7vw;
         color: #fff;
         font-family: 'DM Serif Display', sans-serif; 
     }
 }
+// about section.
 .about-section {
+    opacity: 0;
     padding: 100px;
     .about-inner {
         display: flex;
+        flex-wrap: wrap;
         width: 900px;
         height: 500px;
         .area {
@@ -98,7 +184,6 @@ body {
                         }
                         &:nth-of-type(3) {
                             margin: 50px 0;
-
                         }
                         dt {
                             font-family: 'DM Serif Display', sans-serif; 
@@ -116,9 +201,11 @@ body {
         }
     }
 }
+// skill section.
 .skill-section {
-    padding: 100px;
+    opacity: 0;
     overflow: hidden;
+    padding: 100px;
     .skill-inner {
         display: flex;
         position: relative;
@@ -161,7 +248,9 @@ body {
          }
     }
 }
+// publishing section.
 .publ-section {
+    opacity: 0;
     padding: 100px;
     .publ-inner {
         display: flex;
@@ -184,8 +273,6 @@ body {
                         display: inline-block;
                         width: 150px;
                         height: 150px;
-                        bottom: 0;
-                        left: 0;
                         margin: 5px;
                         border: 1px solid #414141;
                         border-radius: 20px;
@@ -228,7 +315,7 @@ body {
                     h2 {
                         margin: 0;
                         color: #2a2a77;
-                        font-size: 4vw;
+                        font-size: 3rem;
                     }
                     p {
                       margin: 0;
@@ -260,28 +347,30 @@ body {
         }
     }
 }
+// contact section.
 .outro-section {
     flex-direction: column;
     font-family: 'DM Serif Display', sans-serif;
     h2 {
         margin: 0;
         color: #2a2a77;
-        font-size: 2.5vw;
+        font-size: 2rem;
         font-weight: 600;
     }
     p {
         margin: 0;
-        font-size: 2vw;
+        font-size: 1.5rem;
     }
 }
+// footer.
 footer {
     p {
         margin: 0;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         text-align: center;
     }
 }
-/* modal */
+// modal.
 iframe {
     width: 100%;
     height: 100%;
@@ -313,4 +402,5 @@ iframe {
     }
 }
 
+@import "_media.scss";
 @import "keyframes.css";
