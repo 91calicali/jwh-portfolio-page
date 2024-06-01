@@ -13,7 +13,7 @@ a {
     text-decoration: none;
 }
 .container {
-    width: 480px;
+    width: 360px;
     height: 1300px;
 }
 header {
@@ -275,6 +275,7 @@ input[id=nav-check]:checked + .nav-btn::after {
 .signup-section img {
     display: block;
     margin: 0 auto;
+    width: 200px;
 }
 #signup-btn {
     display: block;
