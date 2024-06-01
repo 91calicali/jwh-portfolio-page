@@ -135,7 +135,11 @@ function goSection(idx) {
     let topPx = 0;
 
     for(let i = 0; i < idx; i++) {
-        topPx += getSectionHeight()[i] + 150;
+        if(window.innerWidth > 1024) {
+            topPx += getSectionHeight()[i] + 50;
+        } else {
+            topPx += getSectionHeight()[i] + 150;
+        }        
     }
 
     window.scrollTo({ top: topPx, behavior: 'smooth' });
