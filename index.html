@@ -14,238 +14,184 @@
     <link rel="stylesheet" href="css/index/common.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Saira+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <title>JWH Portfolio Page</title>
 </head>
 <body>
-    <div id="web-container" class="relative width-100 height-100">
-        <!-- header -->
-        <header id="hd">
-            <nav class="hd-nav">
-                <ul class="absolute">
-                    <li onclick="navScroll(0)">Home</li>
-                    <li onclick="navScroll(1)">About</li>
-                    <li onclick="navScroll(2)">Skill</li>
-                    <li onclick="navScroll(3)">Publishing</li>
-                </ul>
-            </nav>
-            <div class="nav-menu-btn mnb" onclick="viewMobileMenu()">
-                <span class="mnb mnb-line"></span>
-                <span class="mnb mnb-line"></span>
-                <span class="mnb mnb-line"></span>
-            </div>
-        </header>
-        <!-- mobile menu -->
-        <aside id="as">
-            <div class="mobile-nav-menu-container">
-                <nav class="as-nav">
-                    <ul class="absolute width-100">
-                        <li onclick="navScroll(0)">Home</li>
-                        <li onclick="navScroll(1)">About</li>
-                        <li onclick="navScroll(2)">Skill</li>
-                        <li onclick="navScroll(3)">Publishing</li>
-                    </ul>
-                </nav>
-            </div>
-        </aside>
-        <main id="main">
-            <section id="home-section" class="section-container relative width-100">
-                <p class="absolute">Ji WonHong Web Publisher</p>
-                <h1 class="absolute">Portfolio</h1>
-                <video class="bg-video relative" muted autoplay loop>
-                    <source src="resource/index/video/home_bg.mp4">
-                    video 태그가 지원되지 않는 브라우저입니다.
-                </video>
-            </section>
-            <section id="about-section" class="section-container relative width-100">
-                <div class="about-content flex relative opacity-0">
-                    <div class="left-container relative">
-                        <div class="photo-img"></div>
-                    </div>
-                    <div class="right-container">
-                        <div id="profile" class="relative width-100">
-                            <h3 class="sub-title">Profile</h2>
-                            <dl>
-                                <dt>Name</dt>
-                                <dd>지원홍</dd>
-                                <dt>DOB</dt>
-                                <dd>1991.08.08</dd>
-                                <dt>E-mail</dt>
-                                <dd>91calicali@gmail.com</dd>
-                            </dl>
+    <div class="container">
+        <!-- slide nav -->
+        <div class="slide-nav">
+            <div onclick="goSection(0)" onmouseenter="slideNavMouseEnter(this)" onmouseleave="slideNavMouseLeave(0, this)"><span class="slide-name">INTRO</span><span class="line"></span></div>
+            <div onclick="goSection(1)" onmouseenter="slideNavMouseEnter(this)" onmouseleave="slideNavMouseLeave(1, this)"><span class="slide-name">ABOUT</span><span class="line"></span></div>
+            <div onclick="goSection(2)" onmouseenter="slideNavMouseEnter(this)" onmouseleave="slideNavMouseLeave(2, this)"><span class="slide-name">SKILL</span><span class="line"></span></div>
+            <div onclick="goSection(3)" onmouseenter="slideNavMouseEnter(this)" onmouseleave="slideNavMouseLeave(3, this)"><span class="slide-name">PUBLISHING</span><span class="line"></span></div>
+            <div onclick="goSection(4)" onmouseenter="slideNavMouseEnter(this)" onmouseleave="slideNavMouseLeave(4, this)"><span class="slide-name">CONTACT</span><span class="line"></span></div>
+        </div>
+        <!-- intro -->
+        <section class="intro-section flex-center">
+            <h1>Ji WonHong<br>Web Publisher Portfolio</h1>
+        </section>
+        <!-- about -->
+        <section class="about-section flex-center">
+            <div class="about-inner">
+                <div class="area flex-center">
+                    <div class="my-picture"></div>
+                </div>
+                <div class="area">
+                    <dl>
+                        <div>
+                            <dt>NAME</dt>
+                            <dd>지 원 홍</dd>
                         </div>
-                        <div class="exp relative width-100">
-                            <h2 class="sub-title">Experience</h2>
-                            <dl>
-                                <dt>2020.08-2023.10</dt>
-                                <dd>달콤소프트 웹뷰 이벤트 개발자</dd>
-                            </dl>
+                        <div>
+                            <dt>BIRTH</dt>
+                            <dd>1991.08.08</dd>
                         </div>
-                        <div class="introduce relative width-100">
-                            <h2 class="sub-title">Introduce</h2>
-                            <p>
-                                안녕하세요. 웹 개발자로 IT 업계에 발을 들이게 된 지원홍입니다.
-                                <br>
-                                <br>
+                        <div>
+                            <dt>Experience</dt>
+                            <dd>2020.08-2023.10 &nbsp; 달콤소프트 웹뷰 이벤트 개발</dd>
+                        </div>
+                        <div>
+                            <dt>Introduce</dt>
+                            <dd>
+                                안녕하세요. 웹 퍼블리셔 직군을 도전하게 된 지원홍입니다.
+                                <br><br>
                                 저는 아이디어를 시각화하여 전달하는 일에 관심이 많습니다. 
                                 단순히 눈으로 보는 것 뿐이지만 사용자와 가장 가깝게 소통할 수 있는 수단이라고 생각하기 때문입니다.
                                 그렇기에 좋은 사람들과 좋은 아이디어를 인상 깊게 전달하는 일을 해보고 싶습니다.
-                                <br>
-                                <br>
+                                <br><br>
                                 제 포트폴리오에 방문해주셔서 감사합니다.
-                            </p>
+                            </dd>
                         </div>
-                    </div>                        
+                    </dl>
                 </div>
-            </section>
-            <section id="skill-section" class="section-container relative width-100">
-                <div class="skill-content relative opacity-0">
-                    <h2 class="sub-title">Front-end</h2>
-                    <ul>
-                        <li>웹 표준, 접근성, 호환성 준수하여 마크업하는 것을 지향합니다.</li>
-                        <li>다양한 환경에 최적화될 수 있도록 노력하며 반응형 웹 퍼블리싱을 할 수 있습니다.</li>
-                        <li>Javascript, jQuery를 사용해 동적인 웹을 구현할 수 있습니다.</li>
-                        <li>Vue.js 스터디를 통한 기초 지식이 있습니다.</li>
-                    </ul>
-                    <div class="skill-tag-box">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>SCSS</span>
-                        <span>Javascript</span>
-                        <span>jQuery</span>
-                        <span>Vue.js</span> 
+            </div>
+        </section>
+        <!-- skill -->
+        <section class="skill-section">
+            <div class="skill-inner">
+                <div class="area">
+                    <div class="area-inner">
+                        <h2>SKILL</h2>
+                        <p>
+                            Front & Back
+                        </p>
+                        <p>
+                            웹 표준, 접근성, 호환성을 준수하여 마크업하는 것을 지향하며 시맨틱 태그로 레이아웃이 설계되도록 노력합니다. 
+                            또한 다양한 환경에 최적화될 수 있도록 반응형 웹 퍼블리싱을 할 수 있고 스크립트를 이용한 동적인 웹을 구현할 수 있습니다.
+                            <br><br>
+                            Spring MVC 패턴에 해당하는 웹페이지 제작 경험이 있으며 Mysql 쿼리문을 작성, 이해할 수 있습니다.
+                            유관한 업무가 있을 시에 충분한 협업이 가능합니다.
+                            <br><br>
+                            Github를 통해 버전, 이슈 관리를 할 수 있으며 Confluence, Jira를 사용한 경험도 있습니다.
+                        </p>
                     </div>
-                    <h2 class="sub-title">Back-end</h2>
-                    <ul>
-                        <li>Spring MVC 패턴에 맞는 웹 페이지 제작할 수 있습니다.</li>
-                        <li>CRUD Query 작성, 이해를 할 수 있으며 업무에서 관련 대응을 한 경험이 있습니다.</li>
-                    </ul>
-                    <div class="skill-tag-box">
-                        <span>Java</span>
-                        <span>Spring</span>
-                        <span>MySQL</span>
-                        <span>MyBatis</span>
-                    </div>
-                    <h2 class="sub-title">Tools</h2>
-                    <ul>
-                        <li>Eclipse, IntelliJ, VS Code를 이용한 개발이 가능합니다.</li>
-                        <li>형상 관리 도구를 통한 협업, 이슈 관리를 할 수 있습니다.</li>
-                    </ul>
-                    <div class="skill-tag-box">
-                        <span>Eclipse</span>
-                        <span>IntelliJ</span>
-                        <span>VS Code</span>
-                        <span>GitHub</span>
-                        <span>Confluence</span>
-                        <span>Jira</span>
-                        <span>Sourcetree</span>
-                    </div>
+                </div>                
+                <div class="text-deco">
+                    <div>#HTML5</div>
+                    <div>#CSS3 #SCSS</div>
+                    <div>#JAVASCRIPT</div>
+                    <div>#JQUERY</div>
+                    <div>#JAVA</div>
+                    <div>#MYSQL</div>
+                    <div>#GITHUB</div>
                 </div>
-            </section>
-            <section id="pb-section" class="section-container relative width-100">
-                <div class="pb-content relative width-100 height-100 opacity-0">
-                    <h2 class="sub-title">Publishing</h2>
-                    <div class="pb-item">
-                        <img src="resource/index/image/vogue.png" alt="vogue publishing">
-                        <div class="desc">
-                            <p>
-                                보그 코리아
-                            </p>
-                            <p>
-                                보그 코리아 사이트의 메인 페이지를 하드 코딩으로 재현한 토이 프로젝트입니다.
-                            </p>
-                            <div class="pb-view-btn" onclick="viewPageInModal(0)">View</div>
-                        </div>
-                    </div>
-                    <div class="pb-item">
-                        <img src="resource/index/image/neker.png" alt="neker publishing">
-                        <div class="desc">
-                            <p>
-                                네케르
-                            </p>
-                            <p>
-                                네케르 사이트의 메인 페이지를 하드 코딩으로 재현한 토이 프로젝트입니다.
-                            </p>
-                            <div class="pb-view-btn" onclick="viewPageInModal(1)">View</div>
-                        </div>
-                    </div>
-                    <div class="pb-item">
-                        <img src="resource/index/image/coupang.png" alt="coupang play publishing">
-                        <div class="desc">
-                            <p>
-                                쿠팡 플레이
-                            </p>
-                            <p>
-                                QnA 아코디언 효과 구현을 목적으로 퍼블리싱한 쿠팡 플레이 로그인 화면 토이 프로젝트입니다.
-                            </p>
-                            <div class="pb-view-btn" onclick="viewPageInModal(2)">View</div>
-                        </div>
-                    </div>
-                    <div class="pb-item">
-                        <img src="resource/index/image/megabooks.png" alt="megabooks publishing">
-                        <div class="desc">
-                            <p>
-                                메가스터디북스
-                            </p>
-                            <p>
-                                input과 label을 이용해 로그인 폼 구현을 목적으로 퍼블리싱한 메가스터디북스 로그인 화면 토이 프로젝트입니다.
-                            </p>
-                            <div class="pb-view-btn" onclick="viewPageInModal(3)">View</div>
-                        </div>
-                    </div>
-                    <div class="pb-item">
-                        <img src="resource/index/image/tab.png" alt="tab slider">
-                        <div class="desc">
-                            <p>
-                                CSS 슬라이더 구현
-                            </p>
-                            <p>
-                                Js, Jquery를 사용하지 않고 input checked로 슬라이더 구현을 목적으로 만든 토이 프로젝트입니다.
-                            </p>
-                            <div class="pb-view-btn" onclick="viewPageInModal(4)">View</div>
-                        </div>
-                    </div>
-                    <div class="pb-item">
-                        <img src="resource/index/image/image-ac.png" alt="accordion image">
-                        <div class="desc">
-                            <p>
-                                이미지 아코디언
-                            </p>
-                            <p>
-                                flex 속성을 이용해 이미지 아코디언 효과 구현을 목적으로 만든 토이 프로젝트입니다.
-                            </p>
-                            <div class="pb-view-btn" onclick="viewPageInModal(5)">View</div>
-                        </div>
-                    </div>
-                    <div class="pb-item">
-                        <img src="resource/index/image/video-landing.png" alt="video landing">
-                        <div class="desc">
-                            <p>
-                                비디오 랜딩 페이지
-                            </p>
-                            <p>
-                                video 태그와 애니메이션 딜레이를 이용해 간단한 랜딩 페이지 컨셉 구현을 목적으로 만든 토이 프로젝트입니다.
-                            </p>
-                            <div class="pb-view-btn" onclick="viewPageInModal(6)">View</div>
-                        </div>
+            </div>
+        </section>
+        <section class="publ-section flex-center">
+            <div class="publ-inner">
+                <div class="area">
+                    <div class="area-inner">
+                        <div class="item-btn active" onclick="itemView(0, this)"></div>
+                        <div class="item-btn" onclick="itemView(1, this)"></div>
+                        <div class="item-btn" onclick="itemView(2, this)"></div>
+                        <div class="item-btn" onclick="itemView(3, this)"></div>
+                        <div class="item-btn" onclick="itemView(4, this)"></div>
+                        <div class="item-btn" onclick="itemView(5, this)"></div>
                     </div>
                 </div>
-            </section>
-            <section id="outro-section" class="section-container relative width-100">
-                <h2 class="absolute">Thank you for watching!</h2>
-
-                <video class="bg-video relative" muted autoplay loop>
-                    <source src="resource/index/video/home_bg.mp4">
-                    video 태그가 지원되지 않는 브라우저입니다.
-                </video>
-            </section>
-        </main>
-        <footer class="width-100 absolute">
-            <p>© 2024 JI WONHONG All Rights Reserved.</p>
-            <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 목적으로 제작되었습니다.</p>
+                <div class="area">
+                    <div class="area-inner item-desc active">
+                        <h2>보그 코리아</h2>
+                        <p>
+                            #메인페이지 #토이프로젝트
+                        </p>
+                        <p>
+                            보그 코리아의 메인 페이지를 하드 코딩으로 재현하는 것을 목적으로 퍼블리싱 했습니다.
+                            각 섹션의 아이템은 flex 속성을 이용해 정렬했고 헤더는 translate 값 변화로 구현했습니다.
+                        </p>
+                        <div class="view-btn" onclick="viewPageInModal(0)">View</div>
+                    </div>
+                    <div class="area-inner item-desc">
+                        <h2>네케르</h2>
+                        <p>
+                            #메인페이지 #토이프로젝트
+                        </p>
+                        <p>
+                            네케르의 메인 페이지를 하드 코딩으로 재현하는 것을 목적으로 퍼블리싱 했습니다.
+                            all products의 정보를 담고 있는 임시 데이터 파일을 만들고 해당 데이터를 스크립트로 불러와 추가하는 방식으로 구현했습니다. 
+                        </p>
+                        <div class="view-btn" onclick="viewPageInModal(1)">View</div>
+                    </div>
+                    <div class="area-inner item-desc">
+                        <h2>쿠팡 플레이</h2>
+                        <p>
+                            #QnA #아코디언 #토이프로젝트
+                        </p>
+                        <p>
+                            아코디언 메뉴를 구현하는 것을 목적으로 쿠팡 플레이 로그인 페이지를 퍼블리싱 했습니다. 화면 하단의 QnA가 해당하는 부분이며 checked 속성값의 변경으로 구현하였습니다.
+                            
+                        </p>
+                        <div class="view-btn" onclick="viewPageInModal(2)">View</div>
+                    </div>
+                    <div class="area-inner item-desc">
+                        <h2>메가스터디북스</h2>
+                        <p>
+                            #로그인폼 #토이프로젝트
+                        </p>
+                        <p>
+                            로그인 폼을 구현하는 것을 목적으로 메가스터디북스 로그인 페이지를 퍼블리싱 했습니다. 가상 선택자인 before의 배경 이미지를 변경하는 방식으로 커스텀 체크 박스를 구현했습니다.
+                        </p>
+                        <div class="view-btn" onclick="viewPageInModal(3)">View</div>
+                    </div>
+                    <div class="area-inner item-desc">
+                        <h2>슬라이더</h2>
+                        <p>
+                            #CSS #토이프로젝트
+                        </p>
+                        <p>
+                            CSS만으로 동작하는 슬라이더를 구현하였으며 체크박스 id에 따라 위치가 변경되도록 하였습니다.
+                        </p>
+                        <div class="view-btn" onclick="viewPageInModal(4)">View</div>
+                    </div>
+                    <div class="area-inner item-desc">
+                        <h2>비디오 랜딩페이지</h2>
+                        <p>
+                            #VIDEO #토이프로젝트
+                        </p>
+                        <p>
+                            Video 태그와 애니메이션 딜레이를 이용해 간단한 랜딩 페이지 구현 목적인 토이 프로젝트입니다.
+                        </p>
+                        <div class="view-btn" onclick="viewPageInModal(5)">View</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="outro-section flex-center">
+            <h2>CONTACT</h2>
+            <p>91calicali@gmail.com</p>
+        </section>
+        <footer>
+            <p>
+                © 2024 JI WONHONG All Rights Reserved.
+                <br>
+                본 사이트는 상업적 목적이 아닌 개인 포트폴리오 목적으로 제작되었습니다.
+            </p>
         </footer>
     </div>
 
+    <script src="js/main.js"></script>
+<!-- 
     <script>
         let ww = $(window).width(); 
         let sy;
@@ -380,5 +326,6 @@
             m.remove();
         }
     </script>
+    !-->
 </body>
 </html>

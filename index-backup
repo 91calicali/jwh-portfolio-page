@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="JWH Portfolio Page">
+    <meta property="og:description" content="Ji Won Hong Web publisher Portfolio Page">
+    <meta property="og:site_name" content="JWH Portfolio Page">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/x-icon" href="resource/index/image/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="resource/index/image/favicon.png">
+    <link rel="apple-touch-icon" href="resource/index/image/favicon.png">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="css/index/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Saira+Condensed&display=swap" rel="stylesheet">
+    <title>JWH Portfolio Page</title>
+</head>
+<body>
+    <div id="web-container" class="relative width-100 height-100">
+        <!-- header -->
+        <header id="hd">
+            <nav class="hd-nav">
+                <ul class="absolute">
+                    <li onclick="navScroll(0)">Home</li>
+                    <li onclick="navScroll(1)">About</li>
+                    <li onclick="navScroll(2)">Skill</li>
+                    <li onclick="navScroll(3)">Publishing</li>
+                </ul>
+            </nav>
+            <div class="nav-menu-btn mnb" onclick="viewMobileMenu()">
+                <span class="mnb mnb-line"></span>
+                <span class="mnb mnb-line"></span>
+                <span class="mnb mnb-line"></span>
+            </div>
+        </header>
+        <!-- mobile menu -->
+        <aside id="as">
+            <div class="mobile-nav-menu-container">
+                <nav class="as-nav">
+                    <ul class="absolute width-100">
+                        <li onclick="navScroll(0)">Home</li>
+                        <li onclick="navScroll(1)">About</li>
+                        <li onclick="navScroll(2)">Skill</li>
+                        <li onclick="navScroll(3)">Publishing</li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <main id="main">
+            <section id="home-section" class="section-container relative width-100">
+                <p class="absolute">Ji WonHong Web Publisher</p>
+                <h1 class="absolute">Portfolio</h1>
+                <video class="bg-video relative" muted autoplay loop>
+                    <source src="resource/index/video/home_bg.mp4">
+                    video 태그가 지원되지 않는 브라우저입니다.
+                </video>
+            </section>
+            <section id="about-section" class="section-container relative width-100">
+                <div class="about-content flex relative opacity-0">
+                    <div class="left-container relative">
+                        <div class="photo-img"></div>
+                    </div>
+                    <div class="right-container">
+                        <div id="profile" class="relative width-100">
+                            <h3 class="sub-title">Profile</h2>
+                            <dl>
+                                <dt>Name</dt>
+                                <dd>지원홍</dd>
+                                <dt>DOB</dt>
+                                <dd>1991.08.08</dd>
+                                <dt>E-mail</dt>
+                                <dd>91calicali@gmail.com</dd>
+                            </dl>
+                        </div>
+                        <div class="exp relative width-100">
+                            <h2 class="sub-title">Experience</h2>
+                            <dl>
+                                <dt>2020.08-2023.10</dt>
+                                <dd>달콤소프트 웹뷰 이벤트 개발자</dd>
+                            </dl>
+                        </div>
+                        <div class="introduce relative width-100">
+                            <h2 class="sub-title">Introduce</h2>
+                            <p>
+                                안녕하세요. 웹 개발자로 IT 업계에 발을 들이게 된 지원홍입니다.
+                                <br>
+                                <br>
+                                저는 아이디어를 시각화하여 전달하는 일에 관심이 많습니다. 
+                                단순히 눈으로 보는 것 뿐이지만 사용자와 가장 가깝게 소통할 수 있는 수단이라고 생각하기 때문입니다.
+                                그렇기에 좋은 사람들과 좋은 아이디어를 인상 깊게 전달하는 일을 해보고 싶습니다.
+                                <br>
+                                <br>
+                                제 포트폴리오에 방문해주셔서 감사합니다.
+                            </p>
+                        </div>
+                    </div>                        
+                </div>
+            </section>
+            <section id="skill-section" class="section-container relative width-100">
+                <div class="skill-content relative opacity-0">
+                    <h2 class="sub-title">Front-end</h2>
+                    <ul>
+                        <li>웹 표준, 접근성, 호환성 준수하여 마크업하는 것을 지향합니다.</li>
+                        <li>다양한 환경에 최적화될 수 있도록 노력하며 반응형 웹 퍼블리싱을 할 수 있습니다.</li>
+                        <li>Javascript, jQuery를 사용해 동적인 웹을 구현할 수 있습니다.</li>
+                        <li>Vue.js 스터디를 통한 기초 지식이 있습니다.</li>
+                    </ul>
+                    <div class="skill-tag-box">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>SCSS</span>
+                        <span>Javascript</span>
+                        <span>jQuery</span>
+                        <span>Vue.js</span> 
+                    </div>
+                    <h2 class="sub-title">Back-end</h2>
+                    <ul>
+                        <li>Spring MVC 패턴에 맞는 웹 페이지 제작할 수 있습니다.</li>
+                        <li>CRUD Query 작성, 이해를 할 수 있으며 업무에서 관련 대응을 한 경험이 있습니다.</li>
+                    </ul>
+                    <div class="skill-tag-box">
+                        <span>Java</span>
+                        <span>Spring</span>
+                        <span>MySQL</span>
+                        <span>MyBatis</span>
+                    </div>
+                    <h2 class="sub-title">Tools</h2>
+                    <ul>
+                        <li>Eclipse, IntelliJ, VS Code를 이용한 개발이 가능합니다.</li>
+                        <li>형상 관리 도구를 통한 협업, 이슈 관리를 할 수 있습니다.</li>
+                    </ul>
+                    <div class="skill-tag-box">
+                        <span>Eclipse</span>
+                        <span>IntelliJ</span>
+                        <span>VS Code</span>
+                        <span>GitHub</span>
+                        <span>Confluence</span>
+                        <span>Jira</span>
+                        <span>Sourcetree</span>
+                    </div>
+                </div>
+            </section>
+            <section id="pb-section" class="section-container relative width-100">
+                <div class="pb-content relative width-100 height-100 opacity-0">
+                    <h2 class="sub-title">Publishing</h2>
+                    <div class="pb-item">
+                        <img src="resource/index/image/vogue.png" alt="vogue publishing">
+                        <div class="desc">
+                            <p>
+                                보그 코리아
+                            </p>
+                            <p>
+                                보그 코리아 사이트의 메인 페이지를 하드 코딩으로 재현한 토이 프로젝트입니다.
+                            </p>
+                            <div class="pb-view-btn" onclick="viewPageInModal(0)">View</div>
+                        </div>
+                    </div>
+                    <div class="pb-item">
+                        <img src="resource/index/image/neker.png" alt="neker publishing">
+                        <div class="desc">
+                            <p>
+                                네케르
+                            </p>
+                            <p>
+                                네케르 사이트의 메인 페이지를 하드 코딩으로 재현한 토이 프로젝트입니다.
+                            </p>
+                            <div class="pb-view-btn" onclick="viewPageInModal(1)">View</div>
+                        </div>
+                    </div>
+                    <div class="pb-item">
+                        <img src="resource/index/image/coupang.png" alt="coupang play publishing">
+                        <div class="desc">
+                            <p>
+                                쿠팡 플레이
+                            </p>
+                            <p>
+                                QnA 아코디언 효과 구현을 목적으로 퍼블리싱한 쿠팡 플레이 로그인 화면 토이 프로젝트입니다.
+                            </p>
+                            <div class="pb-view-btn" onclick="viewPageInModal(2)">View</div>
+                        </div>
+                    </div>
+                    <div class="pb-item">
+                        <img src="resource/index/image/megabooks.png" alt="megabooks publishing">
+                        <div class="desc">
+                            <p>
+                                메가스터디북스
+                            </p>
+                            <p>
+                                input과 label을 이용해 로그인 폼 구현을 목적으로 퍼블리싱한 메가스터디북스 로그인 화면 토이 프로젝트입니다.
+                            </p>
+                            <div class="pb-view-btn" onclick="viewPageInModal(3)">View</div>
+                        </div>
+                    </div>
+                    <div class="pb-item">
+                        <img src="resource/index/image/tab.png" alt="tab slider">
+                        <div class="desc">
+                            <p>
+                                CSS 슬라이더 구현
+                            </p>
+                            <p>
+                                Js, Jquery를 사용하지 않고 input checked로 슬라이더 구현을 목적으로 만든 토이 프로젝트입니다.
+                            </p>
+                            <div class="pb-view-btn" onclick="viewPageInModal(4)">View</div>
+                        </div>
+                    </div>
+                    <div class="pb-item">
+                        <img src="resource/index/image/image-ac.png" alt="accordion image">
+                        <div class="desc">
+                            <p>
+                                이미지 아코디언
+                            </p>
+                            <p>
+                                flex 속성을 이용해 이미지 아코디언 효과 구현을 목적으로 만든 토이 프로젝트입니다.
+                            </p>
+                            <div class="pb-view-btn" onclick="viewPageInModal(5)">View</div>
+                        </div>
+                    </div>
+                    <div class="pb-item">
+                        <img src="resource/index/image/video-landing.png" alt="video landing">
+                        <div class="desc">
+                            <p>
+                                비디오 랜딩 페이지
+                            </p>
+                            <p>
+                                video 태그와 애니메이션 딜레이를 이용해 간단한 랜딩 페이지 컨셉 구현을 목적으로 만든 토이 프로젝트입니다.
+                            </p>
+                            <div class="pb-view-btn" onclick="viewPageInModal(6)">View</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="outro-section" class="section-container relative width-100">
+                <h2 class="absolute">Thank you for watching!</h2>
+
+                <video class="bg-video relative" muted autoplay loop>
+                    <source src="resource/index/video/home_bg.mp4">
+                    video 태그가 지원되지 않는 브라우저입니다.
+                </video>
+            </section>
+        </main>
+        <footer class="width-100 absolute">
+            <p>© 2024 JI WONHONG All Rights Reserved.</p>
+            <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 목적으로 제작되었습니다.</p>
+        </footer>
+    </div>
+
+    <script>
+        let ww = $(window).width(); 
+        let sy;
+        let sectionContent;
+        let timer;
+
+        // load.
+        window.addEventListener('load', ()=>{
+            sectionHeightSet();
+            $('.pb-list').eq(0).addClass('active');
+            $('.pb-pf-container').eq(0).addClass('active');
+        });
+
+        // resize.
+        window.addEventListener('resize', ()=>{
+            ww = $(window).width();
+            sectionHeightSet();
+        });
+
+        // scroll.
+        window.addEventListener('scroll', ()=>{
+            sy = $(window).scrollTop();
+
+            // 섹션 컨텐츠 페이드 인 애니메이션.
+            if(sy > getSectionHeight()[0] - 200 && sy < getSectionHeight()[0] + getSectionHeight()[1] - 200) {
+                sectionContent = document.querySelector(".about-content");
+                sectionContent.style.animation = "fadeInAndUp1 1s ease-out forwards";
+            } else if(sy > getSectionHeight()[0] + getSectionHeight()[1] - 200 && sy < getSectionHeight()[0] + getSectionHeight()[1] + getSectionHeight()[2] - 200) {
+                sectionContent = document.querySelector(".skill-content");
+                sectionContent.style.animation = "fadeInAndUp1 1s ease-out forwards";
+            } else if(sy > getSectionHeight()[0] + getSectionHeight()[1] + getSectionHeight()[2] - 200 && sy < getSectionHeight()[0] + getSectionHeight()[1] + getSectionHeight()[2] + getSectionHeight()[3]) {
+                sectionContent = document.querySelector(".pb-content");
+                sectionContent.style.animation = "fadeInAndUp2 1s ease-out forwards";
+            }
+
+            // 현재 위치에 따라 색 변경.
+            if(ww >= 768) {
+                if(sy < getSectionHeight()[0]) {
+                    $('#hd .hd-nav ul li').css('color', '#FFF');
+                } else if(sy > getSectionHeight()[0] && sy < getSectionHeight()[0] + getSectionHeight()[1] + getSectionHeight()[2] + getSectionHeight()[3]) {
+                    $('#hd .hd-nav ul li').css('color', '#0B173B');
+                } else if(sy > getSectionHeight()[0] + getSectionHeight()[1] + getSectionHeight()[2] + getSectionHeight()[3]) {
+                    $('#hd .hd-nav ul li').css('color', '#FFF');
+                }
+            } else if(ww < 768) {
+                if(sy < getSectionHeight()[0]) {
+                    $('.mnb-line').css('background-color', '#FFF');
+                } else if(sy > getSectionHeight()[0] && sy < getSectionHeight()[0] + getSectionHeight()[1] + getSectionHeight()[2] + getSectionHeight()[3]) {
+                    $('.mnb-line').css('background-color', '#0B173B');
+                } else if(sy > getSectionHeight()[0] + getSectionHeight()[1] + getSectionHeight()[2] + getSectionHeight()[3]) {
+                    $('.mnb-line').css('background-color', '#FFF');
+                }
+            }
+        });
+
+        // home & outro 섹션 높이 세팅.
+        function sectionHeightSet() {           
+            $('#home-section').css('height', window.innerHeight + 'px');
+            $('#outro-section').css('height', window.innerHeight + 'px');
+        }
+
+        // 섹션의 높이 return.
+        function getSectionHeight() {
+            const idName = ["#home-section", "#about-section", "#skill-section", "#pb-section", "#outro-section"];
+            const regex = /[^0-9]/g;
+            let result = [];
+
+            for(let i of idName) {
+                const ele = document.querySelector(i);
+                const eleStyle = getComputedStyle(ele);
+                result.push(Number(eleStyle.height.replace(regex, '')));
+            }
+
+            return result;
+        }
+
+        // 섹션 이동.
+        function navScroll(idx) {
+            let topPx = 0;
+
+            for(let i = 0; i < idx; i++) {
+                topPx += getSectionHeight()[i];
+            }
+            
+            window.scrollTo({ top: topPx, behavior: 'smooth' });            
+        }
+
+        // 빈 곳을 터치했을 때 모바일 메뉴 숨기기.
+        $("body").click(function(e) {
+            if(ww <= 768) {
+                if(!$(e.target).hasClass("mnb")) {
+                    $("body").css("overflow", "visible");
+                    $("#as").css("display", "none");
+                }
+            }
+        });
+
+        // 모바일 메뉴 보이기.
+        function viewMobileMenu() {
+            $("body").css("overflow", "hidden");
+            $("#as").css("display", "block");
+        }
+
+        // create modal.
+        let urls = [
+            "https://91calicali.github.io/vogue-main-page-hard-coding/",
+            "https://91calicali.github.io/neker-main-page-hard-coding/",
+            "publishing/coupang-play.html",
+            "publishing/mega-login.html",
+            "publishing/tab-slider.html",
+            "publishing/accordion-image.html",
+            "publishing/video-landing.html",
+        ];
+
+        function viewPageInModal(idx) {
+            let m = document.querySelector("main");
+
+            let mh = `
+                    <div id="modal" class="web-page-modal">
+                        <iframe src="${urls[idx]}"></iframe>
+                        <div class="web-page-modal-close-btn" onClick="hideModal()">&larr;<div>
+                    </div>
+                    `;
+
+            m.insertAdjacentHTML("beforeend", mh);
+        }
+
+        // remove modal.
+        function hideModal() {
+            let m = document.getElementById("modal");
+
+            m.remove();
+        }
+    </script>
+</body>
+</html>
