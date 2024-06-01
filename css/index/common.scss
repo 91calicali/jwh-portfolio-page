@@ -99,6 +99,7 @@ header {
 }
 // slide nav (화면 우측 fix)
 .slide-nav {
+    z-index: 99;
     position: fixed;
     top: 50%;
     right: 10px;
