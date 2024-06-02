@@ -1,4 +1,8 @@
 @import "keyframes.css";
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-y: scroll;
   margin: 0;
@@ -122,6 +126,10 @@ header .gnb-btn.active span:nth-of-type(3) {
 .slide-nav div .slide-name.active {
   visibility: visible;
   opacity: 1;
+}
+.slide-nav div .slide-name a {
+  color: inherit;
+  text-decoration: none;
 }
 .slide-nav div .line {
   display: inline-block;

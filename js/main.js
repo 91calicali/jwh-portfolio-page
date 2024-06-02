@@ -74,11 +74,13 @@ window.addEventListener('load', () => {
     for(let i = 0; i < section.length; i++) {
         observer.observe(section[i]);
     }
-
-    InOutSectionHeightSet();
 });
 
 window.addEventListener('resize', () => {
+    InOutSectionHeightSet();
+});
+
+window.addEventListener("DOMContentLoaded", () => {
     InOutSectionHeightSet();
 });
 
@@ -88,14 +90,17 @@ function navToggle() {
     const header = document.querySelector('header');
     const navBtn = document.querySelector('.gnb-btn');
     const gnbNav = document.querySelector('.gnb-nav');
+    const introHeight =  Number(document.querySelector('.intro-section').style.height.split('px')[0]);
 
     if(navBtn.classList.contains('active')){
         body.style.overflow = 'visible';
         navBtn.classList.remove('active');
         gnbNav.classList.remove('active');
-
-        for(let i = 0; i < header.children[0].children.length; i++) {
-            header.children[0].children[i].style.backgroundColor = '#000';
+        
+        if(introHeight < scrollY) {
+            for(let i = 0; i < header.children[0].children.length; i++) {
+                header.children[0].children[i].style.backgroundColor = '#000';
+            }
         }
     } else {
         body.style.overflow = 'hidden';
@@ -112,37 +117,6 @@ function navToggle() {
 function InOutSectionHeightSet() {
     document.querySelector('.intro-section').style.height = `${window.innerHeight}px`;
     document.querySelector('.outro-section').style.height = `${window.innerHeight}px`;
-}
-
-// 섹션의 높이 return.
-// goSection()에서 사용.
-function getSectionHeight() {
-    const sectionName = [".intro-section", ".about-section", ".skill-section", ".publ-section", ".outro-section"];
-    const regex = /[^0-9]/g;
-    let result = [];
-
-    for(let i of sectionName) {
-        const ele = document.querySelector(i); 
-        const eleStyle = getComputedStyle(ele);
-        result.push(Number(eleStyle.height.split('px')[0]));
-    }
-
-    return result;
-}
-
-// slide nav를 눌렀을 때 섹션 이동.
-function goSection(idx) {
-    let topPx = 0;
-
-    for(let i = 0; i < idx; i++) {
-        if(window.innerWidth > 1024) {
-            topPx += getSectionHeight()[i] + 50;
-        } else {
-            topPx += getSectionHeight()[i] + 150;
-        }        
-    }
-
-    window.scrollTo({ top: topPx, behavior: 'smooth' });
 }
 
 // slide nav에 mouseenter & leave일 때.
